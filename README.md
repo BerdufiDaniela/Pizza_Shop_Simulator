@@ -1,16 +1,32 @@
-# Pizza_Shop_Simulator 
+# Pizza Shop Simulator
 
-# Full Description 
-The Pizza Shop Simulator replicates the process of ordering, preparing, and delivering pizza in a modern pizzeria. The system uses multithreading and synchronization via mutexes and condition variables to manage customer orders, store resources (chefs, ovens, packers, delivery drivers), and ensure efficient customer service.
+This project is a **Pizza Shop Simulator**, implemented as part of a coursework assignment for the **Operating Systems** class at the **Athens University of Economics and Business**.
 
-The simulation includes:
+### Description
 
-* Generation of random customer orders with various characteristics.
+This simulation aims to model the operations of a pizza shop, including order placement, pizza preparation, cooking, packaging, and delivery. The system is built using **multi-threading** in **C** with **pthread** library, simulating multiple customers, cooks, packers, and delivery people interacting with each other in a shared environment.
 
-* Management of the preparation, baking, packaging, and delivery process.
+### Features:
 
-* Recording of statistics such as revenue, successful and failed orders, and service times.
+- Simulates customer orders with random pizza types (plain and special).
+- Manages different stages of the process: order placement, preparation, baking, packaging, and delivery.
+- Uses mutexes and condition variables to synchronize access to shared resources, such as ovens and packers.
+- Provides statistics at the end of the simulation, including:
+  - Total revenue
+  - Number of successful and failed orders
+  - Average customer service time
+  - Maximum cooling and preparation times
 
-* Utilization of multiple threads to simulate the simultaneous work of several employees (chefs, packers, delivery drivers).
+### Project Details:
 
-This simulator provides a realistic representation of daily operations in a pizza shop while offering practical experience in the application of synchronization and multithreading in operating systems.
+- **Language**: C
+- **Libraries**: pthread (for multithreading), time.h (for time management)
+- **Concurrency**: Uses mutexes and condition variables to manage synchronization between different processes (orders, pizza preparation, packing, and delivery).
+
+### How to Run:
+
+1. Clone the repository to your local machine.
+2. Compile the code using a C compiler (e.g., `gcc`).
+3. Run the program with two arguments:
+   - Number of customers
+   - Random seed for order generation
