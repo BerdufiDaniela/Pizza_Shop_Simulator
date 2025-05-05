@@ -5,12 +5,12 @@ The Pizza Shop Simulator replicates the process of ordering, preparing, and deli
 
 The simulation includes:
 
-Generation of random customer orders with various characteristics.
+* Generation of random customer orders with various characteristics.
 
-Management of the preparation, baking, packaging, and delivery process.
+* Management of the preparation, baking, packaging, and delivery process.
 
-Recording of statistics such as revenue, successful and failed orders, and service times.
+* Recording of statistics such as revenue, successful and failed orders, and service times.
 
-Utilization of multiple threads to simulate the simultaneous work of several employees (chefs, packers, delivery drivers).
+* Utilization of multiple threads to simulate the simultaneous work of several employees (chefs, packers, delivery drivers).
 
 This simulator provides a realistic representation of daily operations in a pizza shop while offering practical experience in the application of synchronization and multithreading in operating systems.
